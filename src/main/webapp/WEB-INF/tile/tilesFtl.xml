@@ -1,0 +1,27 @@
+ <!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+
+<tiles-definitions>
+	<definition name="baseLayout" template="/WEB-INF/view/ftl/layout.ftl"
+		templateType="freemarker">
+		<put-attribute name="title" value="Sample Title" />
+		<put-attribute name="header" value="/WEB-INF/view/ftl/header.ftl"
+			type="freemarker" />
+		<put-attribute name="menu" value="/WEB-INF/view/ftl/menu.ftl"
+			type="freemarker" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/view/ftl/footer.ftl"
+			type="freemarker" />
+	</definition>
+	<definition name="home" extends="baseLayout">
+		<put-attribute name="title" value="Home" />
+		<put-attribute name="body" value="/WEB-INF/view/ftl/home.ftl"
+			type="freemarker" />
+	</definition>
+	<definition name="page" extends="baseLayout">
+		<put-attribute name="title" value="Page" />
+		<put-attribute name="body" value="/WEB-INF/view/ftl/page.ftl"
+			type="freemarker" />
+	</definition>
+</tiles-definitions>  
