@@ -5,14 +5,10 @@
 <tiles-definitions>
 	<definition name="baseLayout" template="/WEB-INF/view/ftl/layout.ftl"
 		templateType="freemarker">
-		<put-attribute name="title" value="Sample Title" />
-		<put-attribute name="header" value="/WEB-INF/view/ftl/header.ftl"
-			type="freemarker" />
-		<put-attribute name="menu" value="/WEB-INF/view/ftl/menu.ftl"
-			type="freemarker" />
+		<put-attribute name="header" value="/WEB-INF/view/jsp/header.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/view/jsp/menu.jsp" />
 		<put-attribute name="body" value="" />
-		<put-attribute name="footer" value="/WEB-INF/view/ftl/footer.ftl"
-			type="freemarker" />
+		<put-attribute name="footer" value="/WEB-INF/view/jsp/footer.jsp" />
 	</definition>
 	<definition name="home" extends="baseLayout">
 		<put-attribute name="title" value="Home" />
