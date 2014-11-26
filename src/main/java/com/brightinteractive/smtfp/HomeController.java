@@ -4,9 +4,8 @@ package com.brightinteractive.smtfp;
  * Copyright 2014 Bright Interactive, All Rights Reserved.
  */
 
-import javax.servlet.http.HttpServletRequest;
-
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
@@ -21,10 +20,10 @@ public class HomeController
 	}
 
 	@RequestMapping("/page.htm")
-	public String page(@RequestParam(value = "pageNo") String pageNo, HttpServletRequest request)
+	public String page(@RequestParam(value = "pageNo") String pageNo, Model model)
 	{
 		System.out.println("PageNo: " + pageNo);
-		request.setAttribute("pageNo", pageNo);
+		model.addAttribute("pageNo", pageNo);
 		return "page";
 	}
 }
