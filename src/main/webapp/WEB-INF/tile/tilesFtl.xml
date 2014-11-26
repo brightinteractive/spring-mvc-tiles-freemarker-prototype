@@ -11,12 +11,10 @@
 		<put-attribute name="footer" value="/WEB-INF/view/jsp/footer.jsp" />
 	</definition>
 	<definition name="home" extends="baseLayout">
-		<put-attribute name="title" value="Home" />
 		<put-attribute name="body" value="/WEB-INF/view/ftl/home.ftl"
 			type="freemarker" />
 	</definition>
 	<definition name="page" extends="baseLayout">
-		<put-attribute name="title" value="Page" />
 		<put-attribute name="body" value="/WEB-INF/view/ftl/page.ftl"
 			type="freemarker" />
 	</definition>
