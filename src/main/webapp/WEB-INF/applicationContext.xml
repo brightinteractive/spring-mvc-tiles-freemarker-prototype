@@ -17,7 +17,8 @@
 	</bean>
 	<bean id="tilesConfigurer"
 		  class="org.springframework.web.servlet.view.tiles3.TilesConfigurer">
-		<property name="completeAutoload" value="true"/>
-
+		<property name="tilesInitializer">
+			<bean class="com.brightinteractive.tiles.spring.SpringCompleteAutoloadTilesInitializer"/>
+		</property>
 	</bean>
 </beans>
