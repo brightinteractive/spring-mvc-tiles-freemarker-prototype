@@ -21,12 +21,6 @@
 	</bean>
 	<bean id="tilesConfigurer"
 		  class="org.springframework.web.servlet.view.tiles3.TilesConfigurer">
-		<property name="definitions">
-			<list>
-				<!-- <value>/WEB-INF/tile/tilesJsp.xml</value> -->
-				<value>/WEB-INF/tile/tilesFtl.xml</value>
-			</list>
-		</property>
 		<property name="completeAutoload" value="true"/>
 
 	</bean>
