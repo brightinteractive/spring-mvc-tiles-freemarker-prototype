@@ -10,12 +10,8 @@
 		<put-attribute name="body" value="" />
 		<put-attribute name="footer" value="/WEB-INF/view/jsp/footer.jsp" />
 	</definition>
-	<definition name="home" extends="baseLayout">
-		<put-attribute name="body" value="/WEB-INF/view/ftl/home.ftl"
+	<definition name="REGEXP:([^/].*)" extends="baseLayout">
+		<put-attribute name="body" value="/WEB-INF/view/ftl/{1}.ftl"
 			type="freemarker" />
 	</definition>
-	<definition name="page" extends="baseLayout">
-		<put-attribute name="body" value="/WEB-INF/view/ftl/page.ftl"
-			type="freemarker" />
-	</definition>
-</tiles-definitions>  
+</tiles-definitions>
